@@ -17,8 +17,7 @@ buttonElement.addEventListener("click" , function(){
     console.log("numero di chilometri da fare: " , km)
     const etaPassegero = parseInt(etaInputElement.value)
     console.log("La tua età è di: " , etaPassegero + " anni")
-    const numeroChilometriPercorsi = km
-    const prezzoInteroDelBiglietto = numeroChilometriPercorsi * 0.21;
+    const prezzoInteroDelBiglietto = km * 0.21;
     let sconto = 0
     if (etaPassegero<18){
         sconto = prezzoInteroDelBiglietto * 0.2
