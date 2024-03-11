@@ -28,11 +28,11 @@ buttonElement.addEventListener("click" , function(){
     const prezzo = prezzoInteroDelBiglietto - sconto
     const result = parseFloat(prezzo.toFixed(2))
     if (etaPassegero < 18) {
-        prezzoInputElement.innerHTML = "Sei minorenne quindi paghi: " + result
+        prezzoInputElement.innerHTML = "Sei minorenne quindi paghi: " + result + "€"
     } else if (etaPassegero > 65) {
-        prezzoInputElement.innerHTML = "Sei over 65 quindi paghi: " + result
+        prezzoInputElement.innerHTML = "Sei over 65 quindi paghi: " + result + "€"
     } else {
-        prezzoInputElement.innerHTML = "Il prezzo del biglietto è: " + result
+        prezzoInputElement.innerHTML = "Il prezzo del biglietto è: " + result + "€"
     }
     
 })
